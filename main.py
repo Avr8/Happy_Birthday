@@ -3,7 +3,8 @@ import pandas
 import smtplib
 import datetime as dt
 import random
-data = pandas.read_csv(r"D:\us-states-game-start\letter_templates\birthdays.csv")
+src="D:\us-states-game-start\letter_templates\birthdays.csv"
+data = pandas.read_csv(src)
 data_dict = data.to_dict()
 dtobj= dt.datetime.now()
 my_email = "utest3926@gmail.com"
